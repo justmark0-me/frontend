@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  nginx_frontend:
+    build: deploy/nginx/
+    ports:
+      - 80
+    depends_on:
+      - frontend
+    networks:
+      - web
+      - project
+    environment:
+      VIRTUAL_HOST: justmark0.me
+      LETSENCRYPT_HOST: justmark0.me
+      LETSENCRYPT_EMAIL: developer@justmark0.me
+
+  frontend:
+    restart: always
+    ports:
+      - 3000
+    build: .
+    networks:
+      - project
+
+networks:
+  web: # external network for hostname access
+    external:
+      name: web
+  project: # internal network for project

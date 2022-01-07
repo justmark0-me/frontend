@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build and start docker image
+        uses: actions/checkout@v2
       - run: |
           docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend stop
           docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend rm -f

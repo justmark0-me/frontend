@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend stop
-    - run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend rm -f
+    - run: docker-compose -p justmark0me_frontend stop
+    - run: docker-compose -p justmark0me_frontend rm -f
+    - run: docker network create web
     - run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend up --build -d

@@ -16,8 +16,15 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build and start docker image
         uses: actions/checkout@v2
-      - run: |
-          docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend stop
-          docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend rm -f
-          docker network create web
-          docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend up --build -d
+
+      - name: Stop previous containers
+        run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend stop
+
+      - name: Remove old container
+        run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend rm -f
+
+      - name: TEMPORARY SOLUTION. Create network
+        run: docker network create web
+
+      - name: Build and start docker container
+        run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend up --build -d

@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+var cardConponent =
+<div className="card">
+    <div className="box">
+        <div className="img">
+            <img src="me.jpg" />
+        </div>
+        <h2>Mark Nicholson</h2>
+        <span>
+            <ul>
+              <li><a href="mailto:i@justmark0.me" title="E-mail"><i className="fa fa-at" aria-hidden="true" /></a></li>
+              <li><a href="https://vk.com/justmark0" title="VK"><i className="fa fa-vk" aria-hidden="true" /></a></li>
+              <li><a href="https://t.me/justmark0" title="Telegram"><i className="fa fa-telegram" aria-hidden="true" /></a></li>
+              <li><a href="https://github.com/justmark0" title="GitHub"><i className="fa fa-github" aria-hidden="true" /></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100074042946696" title="Facebook"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+              <li><a href="https://instagram.com/just.mark0" title="Instagram"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+            </ul>
+        </span>
+    </div>
+</div>;
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    cardConponent,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

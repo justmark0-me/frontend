@@ -46,10 +46,19 @@ body {
   height: 100%;
 }
 
-.card .box h2 {
-  font-size: 20px;
+.card .box .name h2 {
+  font-size: 25px;
   color: #262626;
-  margin: 20px auto;
+  margin-bottom: 9px;
+}
+
+.card .box .name h3 {
+  font-size: 16px;
+  color: #a8a8a8;
+}
+
+.card .box .name {
+  margin: 25px 10px 20px 10px;
 }
 
 .card .box h2 span {
@@ -82,6 +91,7 @@ body {
 .card .box ul li a {
   display: block;
   color: #aaa;
+  width: 20px;
   margin: 0 10px;
   font-size: 20px;
   transition: 0.5s;

@@ -10,7 +10,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
 
     steps:
       - uses: actions/checkout@v2
@@ -22,9 +22,6 @@ jobs:
 
       - name: Remove old container
         run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend rm -f
-
-      - name: TEMPORARY SOLUTION. Create network
-        run: docker network create web
 
       - name: Build and start docker container
         run: docker-compose -f docker-compose.deploy.yml -p justmark0me_frontend up --build -d

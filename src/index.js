@@ -15,7 +15,7 @@ var cardConponent =
         <span>
             <ul>
               <li><a href="mailto:i@justmark0.me" title="E-mail"><i className="fa fa-at" aria-hidden="true" /></a></li>
-              <li><a href="https://vk.com/justmark0" title="VK"><i className="fa fa-vk" aria-hidden="true" /></a></li>
+              <li><a href="https://www.linkedin.com/in/justmark0/" title="Linkedin"><i className="fa fa-linkedin" aria-hidden="true" /></a></li>
               <li><a href="https://t.me/justmark0" title="Telegram"><i className="fa fa-telegram" aria-hidden="true" /></a></li>
             </ul>
         </span>

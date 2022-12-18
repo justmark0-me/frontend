@@ -1,6 +1,6 @@
 # [justmark0.me](https://justmark0.me) frontend repo
 
-This repository is open source repository for my site.
+This is repo for frontend part of my site [justmark0.me](https://justmark0.me)
 
 ## How to start
 

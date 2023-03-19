@@ -12,7 +12,7 @@ npm start
 ```
 
 ### How to use it
-If you want to make your site, you can fork this repository and modify it for your needs. 
+If you want the same site. You should fork it then configure secrets of repo, add github runner and start pipeline ☺️ !
 
 ### How does it deployed
 This service runs in docker container with nginx that "connects" to [nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) (it manages certs and virtual domains)

@@ -12,7 +12,7 @@ const CardComponent = () => {
 
     // Use useEffect to setup listeners after component mounts
     useEffect(() => {
-        const elements = ['email', 'linkedin', 'telegram', 'github', 'facebook', 'instagram'];
+        const elements = ['email', 'linkedin', 'telegram', 'github'];
         elements.forEach(elementID => {
             const element = document.getElementById(elementID);
             if (element) {
@@ -44,16 +44,14 @@ const CardComponent = () => {
                 <span>
                     <ul>
                       <li><a href="mailto:i@justmark0.me" title="E-mail"><i className="fa fa-at" aria-hidden="true" id="email" /></a></li>
-                      <li><a href="https://www.linkedin.com/in/justmark0/" title="Linkedin"><i className="fa fa-linkedin" aria-hidden="true" id="linkedin" /></a></li>
                       <li><a href="https://t.me/justmark0" title="Telegram"><i className="fa fa-telegram" aria-hidden="true" id="telegram" /></a></li>
                     </ul>
                 </span>
                 <br/>
                 <span>
                     <ul>
-                        <li><a href="https://github.com/justmark0" title="GitHub"><i className="fa fa-github" aria-hidden="true" id="github" /></a></li>
-                        <li><a href="https://www.facebook.com/profile.php?id=100074042946696" title="Facebook"><i className="fa fa-facebook" aria-hidden="true" id="facebook" /></a></li>
-                        <li><a href="https://instagram.com/just.mark0" title="Instagram"><i className="fa fa-instagram" aria-hidden="true" id="instagram" /></a></li>
+                        <li><a href="https://github.com/justmark0" title="GitHub"><i className="fa fa-github" aria-hidden="true" id="github"/></a></li>
+                        <li><a href="https://www.linkedin.com/in/justmark0/" title="Linkedin"><i className="fa fa-linkedin" aria-hidden="true" id="linkedin"/></a></li>
                     </ul>
                 </span>
             </div>
@@ -62,6 +60,6 @@ const CardComponent = () => {
 };
 
 ReactDOM.render(
-    <CardComponent />,
+    <CardComponent/>,
     document.getElementById('root')
 );

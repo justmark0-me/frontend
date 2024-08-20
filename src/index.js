@@ -39,7 +39,7 @@ const CardComponent = () => {
                 </div>
                 <div className="name">
                     <h2>Mark Nicholson</h2>
-                    <h3>Backend Developer</h3>
+                    <h3>Software Engineer</h3>
                 </div>
                 <span>
                     <ul>

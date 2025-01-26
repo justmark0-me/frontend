@@ -3,14 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 const CardComponent = () => {
-    // Function to create event listeners
     const getListener = (elementID) => {
         return function () {
-            fetch(`https://api.justmark0.me/v1/new_request/${elementID}`);
+            fetch('https://byback.bybyte.dev/v1/action', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    action: elementID,
+                    d: 'jm'
+                })
+            });
         };
     };
 
-    // Use useEffect to setup listeners after component mounts
     useEffect(() => {
         const elements = ['email', 'linkedin', 'telegram', 'github'];
         elements.forEach(elementID => {
@@ -20,7 +27,6 @@ const CardComponent = () => {
             }
         });
 
-        // Cleanup listeners when component unmounts
         return () => {
             elements.forEach(elementID => {
                 const element = document.getElementById(elementID);

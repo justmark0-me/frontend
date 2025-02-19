@@ -39,9 +39,15 @@ const CardComponent = () => {
 
     return (
         <div className="card">
+            <div className="bybyte-banner">
+                <a href="https://bybyte.dev" target="_blank" rel="noopener noreferrer">
+                    <img src="/bybyte.svg" alt="bybyte"/>
+                </a>
+            </div>
+
             <div className="box">
                 <div className="img">
-                    <img src="me.jpg" />
+                    <img src="me.jpg"/>
                 </div>
                 <div className="name">
                     <h2>Mark Nicholson</h2>
@@ -49,15 +55,21 @@ const CardComponent = () => {
                 </div>
                 <span>
                     <ul>
-                      <li><a href="mailto:i@justmark0.me" title="E-mail"><i className="fa fa-at" aria-hidden="true" id="email" /></a></li>
-                      <li><a href="https://t.me/justmark0" title="Telegram"><i className="fa fa-telegram" aria-hidden="true" id="telegram" /></a></li>
+                      <li><a href="mailto:i@justmark0.me" title="E-mail"><i className="fa fa-at" aria-hidden="true"
+                                                                            id="email"/></a></li>
+                      <li><a href="https://t.me/justmark0" title="Telegram"><i className="fa fa-telegram"
+                                                                               aria-hidden="true"
+                                                                               id="telegram"/></a></li>
                     </ul>
                 </span>
                 <br/>
                 <span>
                     <ul>
-                        <li><a href="https://github.com/justmark0" title="GitHub"><i className="fa fa-github" aria-hidden="true" id="github"/></a></li>
-                        <li><a href="https://www.linkedin.com/in/justmark0/" title="Linkedin"><i className="fa fa-linkedin" aria-hidden="true" id="linkedin"/></a></li>
+                        <li><a href="https://github.com/justmark0" title="GitHub"><i className="fa fa-github"
+                                                                                     aria-hidden="true"
+                                                                                     id="github"/></a></li>
+                        <li><a href="https://www.linkedin.com/in/justmark0/" title="Linkedin"><i
+                            className="fa fa-linkedin" aria-hidden="true" id="linkedin"/></a></li>
                     </ul>
                 </span>
             </div>

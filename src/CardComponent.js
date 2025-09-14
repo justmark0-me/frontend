@@ -38,12 +38,6 @@ const CardComponent = () => {
 
     return (
         <div className="card">
-            <div className="bybyte-banner">
-                <a href="https://bybyte.dev" target="_blank" rel="noopener noreferrer">
-                    <img src="/bybyte.svg" alt="bybyte"/>
-                </a>
-            </div>
-
             <div className="box">
                 <div className="img">
                     <img src="me.jpg"/>
